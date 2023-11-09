@@ -2,7 +2,7 @@
 Purpose:
     AWS Well-Architected Chatbot
 """
-OPENAI_API_KEY = "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"
+
 
 # Python imports
 from typing import Type, Union, Dict, Any, List
@@ -17,7 +17,7 @@ import pandas as pd
 
 
 openai.api_key = os.environ["OPEN_AI_KEY"]
-
+OPENAI_API_KEY = "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"
 
 @st.cache_data
 def load_data_frame(fname):
